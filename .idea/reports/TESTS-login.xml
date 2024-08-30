@@ -1,0 +1,25 @@
+<testsuite name="login.Login and Order Product" tests="1" errors="0" failures="0" skipped="0" time="11.344033" timestamp="2024-08-30T09:42:46.655865" hostname="KOUSHIKPF3CZ6A9"><testcase classname="login.Login and Order Product" name="3 Order a product" status="passed" time="11.344033"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: 3 Order a product
+    Given I am on the Demo Login Page ... passed in 9.069s
+    When I fill the account information for account StandardUser into the Username field and the Password field ... passed in 0.577s
+    And I click the Login Button ... passed in 0.222s
+    Then I am redirected to the Demo Main Page ... passed in 0.014s
+    And I verify the App Logo exists ... passed in 0.052s
+    When user sorts products from high price to low price ... passed in 0.193s
+    And user adds highest priced product ... passed in 0.114s
+    And user clicks on cart ... passed in 0.123s
+    And user clicks on checkout ... passed in 0.123s
+    And user enters first name Alice ... passed in 0.177s
+    And user enters last name Doe ... passed in 0.149s
+    And user enters zip code 592 ... passed in 0.156s
+    And user clicks Continue button ... passed in 0.153s
+    Then I verify in Checkout overview page if the total amount for the added item is $49.99 ... passed in 0.058s
+    When user clicks Finish button ... passed in 0.117s
+    Then Thank You header is shown in Checkout Complete page ... passed in 0.047s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>
